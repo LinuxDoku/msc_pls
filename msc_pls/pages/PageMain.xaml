@@ -1,0 +1,187 @@
+﻿<Page x:Class="msc_pls.pages.PageMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+	Title="PageMain">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <Controls:ProgressRing Name="progressIndicator" IsActive="True" />
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ListBox Name="mainMenu" Height="Auto" Grid.Row="0" SelectionMode="Single">
+                    <ListBoxItem Name="mainMenuAllSongs" Selected="mainMenuAllSongs_Selected" >
+                        <Grid Grid.Column="2" Margin="0,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.Column="0" Width="20" Height="20">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_tiles_nine}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Label Grid.Column="1" Content="All Songs"></Label>
+                        </Grid>
+                    </ListBoxItem>
+                    <ListBoxItem Name="mainMenuCreatePlaylist" Selected="mainMenuCreatePlaylist_Selected">
+                        <Grid Grid.Column="2" Margin="0,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.Column="0" Width="20" Height="20">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_add}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Label Grid.Column="1" Content="Create Playlist"></Label>
+                        </Grid>
+                    </ListBoxItem>
+                </ListBox>
+                <Rectangle Grid.Row="1" Fill="#FFF0F0F0" Height="5" />
+                <ListBox Name="playlistMenu" Height="Auto" Grid.Row="2" SelectionChanged="playlistMenu_SelectionChanged" SelectionMode="Single">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Grid.Column="2" Margin="0,5" AllowDrop="True">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Rectangle Grid.Column="0" Width="20" Height="20">
+                                    <Rectangle.Fill>
+                                        <VisualBrush Visual="{StaticResource appbar_music}" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
+                                <Label Grid.Column="1" Content="{Binding title}"></Label>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <EventSetter Event="Drop" Handler="playlistMenuItem_Drop" />
+                            <Setter Property="BorderThickness" Value="0" />                          
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+            </Grid>
+            <Rectangle Name="deletePlaylist" Margin="15,0,0,15" Grid.Row="3" Width="20" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" ToolTip="Delete Selected Playlist" MouseLeftButtonDown="deletePlaylist_MouseLeftButtonDown">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_delete}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <GridSplitter HorizontalAlignment="Right" 
+                  VerticalAlignment="Stretch" 
+                  Grid.Column="1" ResizeBehavior="PreviousAndNext"
+                  Width="5" Grid.RowSpan="2" />
+            <ScrollViewer Panel.ZIndex="2" Grid.Column="2">
+                <WrapPanel Name="wrapPanelLibrary" />
+            </ScrollViewer>
+            <Grid VerticalAlignment="Bottom" Background="White" Height="50" Panel.ZIndex="5" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Margin="0">
+                    <Button Name="ButtonPrev" Width="40" Height="40" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" Click="ButtonPrev_Click">
+                        <DockPanel Width="15" Height="15">
+                            <Rectangle>
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_navigate_previous}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </DockPanel>
+                    </Button>
+                    <Button Name="ButtonPlay" Width="50" Height="50" Style="{DynamicResource MetroCircleButtonStyle}" Margin="40,0,0,0" HorizontalAlignment="Left" Click="ButtonPlay_Click">
+                        <DockPanel Width="20" Height="20">
+                            <Rectangle Margin="2,0,0,0" Height="20" VerticalAlignment="Bottom">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_play}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </DockPanel>
+                    </Button>
+                    <Button Name="ButtonPause" Visibility="Collapsed" Width="50" Height="50" Style="{DynamicResource MetroCircleButtonStyle}" Margin="40,0,0,0" HorizontalAlignment="Left" Click="ButtonPause_Click">
+                        <DockPanel Width="20" Height="20">
+                            <Rectangle Height="20" VerticalAlignment="Bottom">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_pause}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </DockPanel>
+                    </Button>
+                    <Button Name="ButtonNext" Width="40" Height="40" Style="{DynamicResource MetroCircleButtonStyle}" Margin="90,0,0,0" HorizontalAlignment="Left" Click="ButtonNext_Click">
+                        <DockPanel Width="15" Height="15">
+                            <Rectangle>
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_navigate_next}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </DockPanel>
+                    </Button>
+                </Grid>
+                <Image Grid.Column="1" x:Name="CurrentSongCoverImage" Height="40" Width="40" Margin="5,5,0,5" Source="/msc_pls;component/static/images/cover.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Grid Grid.Column="2">
+                    <Label Name="CurrentSongTitle" FontWeight="Bold" FontSize="16" />
+                    <Label Name="CurrentSongAlbum" Margin="0,20,0,0" />
+                    <Label Name="CurrentSongPendingTime" HorizontalAlignment="Right" FontSize="22" Margin="0,5,10,0" />
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Name="CreateNewPlaylist" Visibility="Hidden" Grid.ColumnSpan="3" Grid.RowSpan="2" Background="#CC000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="2" Grid.Row="0" Margin="0,20,25,0" Name="CreateNewPlaylistClose" Width="40" Height="40" Style="{DynamicResource MetroCircleButtonStyle}" VerticalContentAlignment="Stretch" VerticalAlignment="Top" HorizontalAlignment="Right" HorizontalContentAlignment="Stretch" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" Click="CreateNewPlaylistClose_Click">
+                <DockPanel Width="15" Height="15">
+                    <Rectangle>
+                        <Rectangle.Fill>
+                            <VisualBrush Visual="{StaticResource appbar_close}" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </DockPanel>
+            </Button>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Label Content="New Playlist Name:" Margin="0,55,0,0" Foreground="White" HorizontalContentAlignment="Center"></Label>
+                <TextBox Height="20" Name="NewPlaylistName" />
+                <Button Name="CreateNewPlaylistSubmit" Content="Create" Width="200" Height="25" Margin="0,60,0,0" Click="CreateNewPlaylistSubmit_Click" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

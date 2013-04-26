@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="07142d8f-2de5-4e0c-8072-be44d204c798"
+  name="msc_pls_plugin_Wikipedia"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="579a8862-a92c-4c90-b66f-fc46a430281f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dmsc_pls_plugin_Wikipedia"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="eab01b07-7bc3-4466-a25c-b7c84c12fb16"
+        name="Plugin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="604d8fcc-ed4a-4a1d-a038-37ea349f7bfc"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fmsc_pls_plugin-Wikipedia%2Fbin%2FDebug%2Fmsc_pls_plugin-Wikipedia.dll&quot; Namespace%3Dmsc_pls_plugin_Wikipedia Type%3DPlugin"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="79176208-e885-4d68-87e3-882c931558fa"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8be6672e-ae8d-4264-b5b9-63961ef5782e">
+                <propertyInstance
+                  Id="478c2245-230b-4b8d-80eb-2607db31c657"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a1792a6-7c75-42d9-ae12-9af4648c851b">
+                <propertyInstance
+                  Id="6aa366ca-16c5-4545-ad5d-1e3b40faed09"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9d0237e7-5640-4cb6-8ae4-9fe3ac4f5302">
+                <propertyInstance
+                  Id="204533c0-66aa-4ef7-8370-d5d6958e5204"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7181a17-0bdf-430b-8333-7ce4bb748264">
+                <propertyInstance
+                  Id="80901784-5306-4dd5-981a-791b25cb5345"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b8f08fc6-e356-4e5b-9606-fba8e6909ce7">
+                <propertyInstance
+                  Id="8b45d005-b02f-466a-8b26-8f6fb6433c4d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a2791924-3ae9-411a-adcf-1743a5f0c527"
+            name="OpenMainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="31afd614-baeb-469e-85c9-59ee880b9ec6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fmsc_pls_plugin-Wikipedia%2Fbin%2FDebug%2Fmsc_pls_plugin-Wikipedia.dll&quot; Namespace%3Dmsc_pls_plugin_Wikipedia Type%3DPlugin Member%3D(Name%3DOpenMainWindow OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fmsc_pls%2Fbin%2FDebug%2Fmsc_pls.exe&quot; Namespace%3Dmsc_pls.pages Type%3DPageMain)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="31979ee6-df5d-409a-97b1-2a6a6baac85b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca96c32a-d002-49ff-a2cb-56455853610d">
+                    <propertyInstance
+                      Id="5ec3bcbb-b17c-4677-8d3f-ce348124242b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e683a5d9-3bdd-4bbd-91d7-27eae46efef1">
+                    <propertyInstance
+                      Id="0f23f253-daea-4eca-aa2b-b7589b277c9c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f323045e-ff39-456a-b712-6d8cd4c72efb">
+                    <propertyInstance
+                      Id="b288390e-18aa-419b-a265-c751ea6bf4a9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa953d46-7e97-484d-be50-2180a2011bd5">
+                    <propertyInstance
+                      Id="6f34bf2d-37ea-4c27-998c-9cc4e2a31727"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2d28e7f-fb37-4b13-a441-248ff1801ce4">
+                    <propertyInstance
+                      Id="1b075422-d252-4858-adff-df12ad81198a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b472640-c24c-4dac-82a0-dc521284aad3">
+                    <propertyInstance
+                      Id="60dbb073-5618-4429-821f-1d4d96e7e3f0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b6087058-a48f-4946-9d1e-561ade682ada"
+                  name="page"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1ba03517-3428-4e11-a066-012c41002fb6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fmsc_pls_plugin-Wikipedia%2Fbin%2FDebug%2Fmsc_pls_plugin-Wikipedia.dll&quot; Namespace%3Dmsc_pls_plugin_Wikipedia Type%3DPlugin Member%3D(Name%3DOpenMainWindow OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fmsc_pls%2Fbin%2FDebug%2Fmsc_pls.exe&quot; Namespace%3Dmsc_pls.pages Type%3DPageMain)]) ParameterIdentifier%3Dpage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dc7918f1-7ed9-421a-aae2-9cc266c433d3"
+                      LastKnownName="PageMain"
+                      LastKnownLocation="Package5_2311.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c19707d6-2c8f-4806-a4bc-f015fafa141c"
+            name="Plugin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="17660e3a-7127-4df5-a6e1-adb5bdaf2ddf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fmsc_pls_plugin-Wikipedia%2Fbin%2FDebug%2Fmsc_pls_plugin-Wikipedia.dll&quot; Namespace%3Dmsc_pls_plugin_Wikipedia Type%3DPlugin Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="24fe001f-7366-4b8f-960e-2eb19187b46a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eaba65f1-851b-43ae-abb4-fade74c8d407">
+                    <propertyInstance
+                      Id="ae339889-ed4e-41c3-a3f5-198528e7b62f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91fd3ebe-842c-49d8-8a3c-1cd3d899a925">
+                    <propertyInstance
+                      Id="b343e0fd-57b8-49f5-a6cb-367e0905e6b5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4b2031a-9082-40c0-9bbf-d7a520ffad64">
+                    <propertyInstance
+                      Id="6f74458d-79fc-458d-b68a-25e215ccb5ef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94dc42fb-daca-4842-af12-913c4ed4c74f">
+                    <propertyInstance
+                      Id="f16f844d-76bd-43fd-8fdb-670b37a4e2bc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="957e7183-4916-4b2c-bab6-c76f078ae525">
+                    <propertyInstance
+                      Id="b33258ea-5509-4fee-9dd5-59a23ca2656f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03478127-9b8e-4fee-be15-0918d2834789">
+                    <propertyInstance
+                      Id="797c6276-c5b8-4a9c-9f1f-796224a13dcf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

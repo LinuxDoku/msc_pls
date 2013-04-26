@@ -1,0 +1,39 @@
+﻿<Page x:Class="msc_pls.pages.PageSettings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+	Title="PageSettings">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <TabControl Margin="10,10,10,0">
+            <TabItem Header="library">
+                <Grid>
+                    <Button x:Name="buttonLibraryRefresh" Width="200" Height="30" Margin="10,10,0,0" Content="refresh library" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="player">
+                <Grid />
+            </TabItem>
+            <TabItem Header="remote">
+                <Grid>
+                    <Controls:ToggleSwitch Header="remote control state" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" />                    
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Page>

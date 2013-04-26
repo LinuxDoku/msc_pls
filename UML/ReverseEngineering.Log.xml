@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Codegenerierungs-/Texttransformationsprotokoll">
+  <MessageClass Name="Message" Label="Meldung" Option="Informationsmeldungen anzeigen" />
+  <MessageClass Name="Warning" Label="Warnung" Option="Warnungen anzeigen" />
+  <MessageClass Name="Error" Label="Fehler" Option="Fehler anzeigen" />
+  <MessageClass Name="Property" Label="Eigenschaft" Option="Metadaten anzeigen" />
+  <MessageClass Name="Diagnostic" Label="Meldung" Option="Diagnosemeldungen anzeigen" />
+  <Message Timestamp="2013-04-25T23:28:36" Importance="High" Text="Reverse Engineering gestartet." />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls' -  (Package)" />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls::pages' -  (Package)" />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls::pages::PageMain' -  (Class) (Reverse Engineering teilweise durchgeführt - Definition nicht aktualisiert) " />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls_plugin_Wikipedia' -  (Package)" />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Medium" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls_plugin_Wikipedia::Plugin' -  (Class)" />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls_plugin_Wikipedia::Plugin::OpenMainWindow' -  (Operation)" />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls_plugin_Wikipedia::Plugin::OpenMainWindow::page' -  (Parameter)" />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'UML::msc_pls_plugin_Wikipedia::Plugin::Plugin' -  (Operation)" />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="High" Text="Vollständiges Reverse Engineering für (1) Type(n)." />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="High" Text="Reverse Engineering für (1) Type(n) teilweise durchgeführt. Diese Typen waren nicht in der ursprünglichen Auswahl enthalten, sodass kein Reverse Engineering für deren vollständige Definitionen durchgeführt wurde. Stattdessen wurde bei diesem oberflächlichen Vorgang lediglich sichergestellt, dass diese Typen im UML-Modell vorhanden sind, da diese erforderlich sind, um andere Elemente vollständig zu beschreiben." />
+  <Message Timestamp="2013-04-25T23:28:37" Importance="High" Text="Der Reverse Engineering-Vorgang wurde mit (0) Fehler(n) und (0) Warnung(en) abgeschlossen." />
+</Log>

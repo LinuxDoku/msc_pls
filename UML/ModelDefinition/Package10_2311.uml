@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0a24e8c8-20ca-40a0-b290-bc018ef0075a"
+  name="Controls"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f566689c-707d-46d3-b74c-cf624fa2e284"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMahApps.Metro.Controls"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="d2d9fd45-00ea-4a2e-b238-3870e2614078">
+      <profileInstance
+        Id="9a5acd9e-7e89-4ea3-a849-498adde8108c"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d523484c-26c2-4949-835a-7f743f320859"
+        name="MetroWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1f81d311-0c31-41f7-9fa1-148551fa7ac5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fpackages%2FMahApps.Metro.0.10.1.1%2Flib%2Fnet40%2FMahApps.Metro.dll&quot; Namespace%3DMahApps.Metro.Controls Type%3DMetroWindow"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f4083f09-e2b8-4feb-9b03-c47793855285"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4dbcd237-de2d-4d24-9e83-696e0ec5b7fc">
+                <propertyInstance
+                  Id="65da9cab-6c11-4a26-aad4-201e7015d692"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3691f831-1730-4c18-acf6-f029277acbbe">
+                <propertyInstance
+                  Id="5948b1e3-5df3-495f-bd98-f2a0fc4597c2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5bea2d9-7200-46ff-8494-27878aef0225">
+                <propertyInstance
+                  Id="bbe301dd-e758-4c0e-96d5-8bbfcd8f719b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="56ee8f0a-ae1f-4b5a-b184-ff52d8de0cd7">
+                <propertyInstance
+                  Id="3aa9d9b9-9df0-46de-96f6-5609a5bd8fb4"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdbb4450-9411-489c-ba1e-6380f6343cfc">
+                <propertyInstance
+                  Id="384c8c19-e907-45d5-ac70-a61d3d6abd99"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c4b339c5-1b3c-492e-8f98-fae7f8d4cd26"
+        name="ProgressRing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f3d025dd-8781-4f90-be5b-28ccaceac8c9"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMartin%2FDropbox%2FBerufsschule%2FMusik Player%2Fmsc_pls%2Fpackages%2FMahApps.Metro.0.10.1.1%2Flib%2Fnet40%2FMahApps.Metro.dll&quot; Namespace%3DMahApps.Metro.Controls Type%3DProgressRing"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cb989405-3995-4fb3-98b8-91d374274d11"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="94df5521-7d20-4008-be36-1f4c75abdbc2">
+                <propertyInstance
+                  Id="f3e1caff-6096-4d98-9993-4f6ffde5e90b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="48b7922f-e887-4dab-872c-285986155864">
+                <propertyInstance
+                  Id="a656f1d4-43fc-4d8c-aa51-1cd595c184cf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81d76987-d359-491d-b08d-a0ee37f67a25">
+                <propertyInstance
+                  Id="bd4978fc-0da3-4dd6-a85d-e86fba2f39e1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3726b748-3742-460c-aad2-e68fda562e43">
+                <propertyInstance
+                  Id="a0ecc764-9fcc-47b8-b215-022b62c3ffa8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="519da463-0f44-4d9f-a388-f81aa87df491">
+                <propertyInstance
+                  Id="879e9a35-fecf-43fa-852e-b597dc9dccdb"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
