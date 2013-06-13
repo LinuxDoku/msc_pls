@@ -1,6 +1,8 @@
 # MSC_PLS
 A new generation of music player which concentrates on his main function - playing music. But if you need some special extra function, you can simply extend it with a plugin.
 
+![msc_pls screenshot](http://github.com/LinuxDoku/msc_pls/raw/master/Screenshot.png "msc_pls")
+
 **Developers**
 
 * [LinuxDoku](https://github.com/LinuxDoku)
