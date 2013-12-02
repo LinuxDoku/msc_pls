@@ -6,7 +6,7 @@ A new generation of music player which concentrates on his main function - playi
 **Developers**
 
 * [LinuxDoku](https://github.com/LinuxDoku)
-* tr3yf1x
+* [tr3yf1x](https://github.com/tr3yf1x)
 
 
 ## Background
